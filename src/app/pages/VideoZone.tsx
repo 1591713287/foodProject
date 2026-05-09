@@ -33,41 +33,41 @@ const VideoZone: React.FC = () => {
   const currentItem = provinceFoods[currentIndex];
 
   const videoFileMap: { [key: string]: string } = {
-    '北京烤鸭': '北京烤鸭.mp4',
-    '十八街麻花': '十八街麻花.mp4',
-    '驴肉火烧（保定）': '驴肉火烧.mp4',
-    '南翔小笼包': '上海小笼包.mp4',
-    '云南过桥米线': '云南过桥米线.mp4',
-    '手把肉': '内蒙古冰煮羊.mp4',
-    '卤肉饭': '台湾卤肉饭.mp4',
-    '延边冷面': '延吉冷面.mp4',
-    '重庆火锅': '重庆火锅.mp4',
-    '宁夏枸杞': '宁夏手抓羊肉.mp4',
-    '黄山臭鳜鱼': '安徽臭鳜鱼.mp4',
-    '德州扒鸡': '山东德州扒鸡.mp4',
-    '平遥牛肉': '平遥牛肉.mp4',
-    '白切鸡': '广东白切鸡.mp4',
-    '螺蛳粉': '广西螺蛳粉.mp4',
-    '桂林米粉': '广西壮族五色糯米饭.mp4',
-    '大盘鸡': '新疆烤全羊.mp4',
-    '南京盐水鸭': '南京盐水鸭.mp4',
-    '南昌瓦罐汤': '江西瓦罐汤.mp4',
-    '文昌鸡': '海南文昌鸡.mp4',
-    '潮汕牛肉丸': '湖南臭豆腐.mp4',
-    '葡式蛋挞': '澳门猪扒包.mp4',
-    '佛跳墙': '福州佛跳墙.mp4',
-    '酥油茶': '西藏酥油茶.mp4',
-    '酸汤鱼': '贵州黔东南.mp4',
-    '腊汁肉夹馍': '陕西羊肉泡馍.mp4',
-    '兰州牛肉面': '兰州牛肉面.mp4',
-    '哈尔滨红肠': '哈尔滨红肠.mp4',
-    '大连海参': '大连海参.mp4',
-    '西湖醋鱼': '杭州西湖醋鱼.mp4',
-    '孝感麻糖': '武汉热干面.mp4',
-    '逍遥镇胡辣汤': '山西刀削面.mp4',
-    '四川火锅': '广式叉烧饭.mp4',
-    '尕面片': '哈尔滨锅包肉.mp4',
-    '菠萝油': '广东.mp4',
+    '北京烤鸭': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%8C%97%E4%BA%AC%E7%83%A4%E9%B8%AD.mp4',
+    '十八街麻花': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%8D%81%E5%85%AB%E8%A1%97%E9%BA%BB%E8%8A%B1.mp4',
+    '驴肉火烧（保定）': 'http://tenv8okq8.hn-bkt.clouddn.com/%E9%A9%B4%E8%82%89%E7%81%AB%E7%83%A7.mp4',
+    '南翔小笼包': 'http://tenv8okq8.hn-bkt.clouddn.com/%E4%B8%8A%E6%B5%B7%E5%B0%8F%E7%AC%BC%E5%8C%85.mp4',
+    '云南过桥米线': 'http://tenv8okq8.hn-bkt.clouddn.com/%E4%BA%91%E5%8D%97%E8%BF%87%E6%A1%A5%E7%B1%B3%E7%BA%BF.mp4',
+    '手把肉': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%86%85%E8%92%99%E5%8F%A4%E5%86%B0%E7%85%AE%E7%BE%8A.mp4',
+    '卤肉饭': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%8F%B0%E6%B9%BE%E5%8D%A4%E8%82%89%E9%A5%AD.mp4',
+    '延边冷面': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%BB%B6%E5%90%89%E5%86%B7%E9%9D%A2.mp4',
+    '重庆火锅': 'http://tenv8okq8.hn-bkt.clouddn.com/%E9%87%8D%E5%BA%86%E7%81%AB%E9%94%85.mp4',
+    '宁夏枸杞': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%AE%81%E5%A4%8F%E6%89%8B%E6%8A%93%E7%BE%8A%E8%82%89.mp4',
+    '黄山臭鳜鱼': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%AE%89%E5%BE%BD%E8%87%AD%E9%B3%9C%E9%B1%BC.mp4',
+    '德州扒鸡': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B1%B1%E4%B8%9C%E5%BE%B7%E5%B7%9E%E6%89%92%E9%B8%A1.mp4',
+    '平遥牛肉': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%B3%E9%81%A5%E7%89%9B%E8%82%89.mp4',
+    '白切鸡': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%BF%E4%B8%9C%E7%99%BD%E5%88%87%E9%B8%A1.mp4',
+    '螺蛳粉': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%BF%E8%A5%BF%E8%9E%BA%E8%9B%B3%E7%B2%89.mp4',
+    '桂林米粉': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E4%BA%94%E8%89%B2%E7%B3%AF%E7%B1%B3%E9%A5%AD.mp4',
+    '大盘鸡': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%96%B0%E7%96%86%E7%83%A4%E5%85%A8%E7%BE%8A.mp4',
+    '南京盐水鸭': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%8D%97%E4%BA%AC%E7%9B%90%E6%B0%B4%E9%B8%AD.mp4',
+    '南昌瓦罐汤': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%B1%9F%E8%A5%BF%E7%93%A6%E7%BD%90%E6%B1%A4.mp4',
+    '文昌鸡': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%B5%B7%E5%8D%97%E6%96%87%E6%98%8C%E9%B8%A1.mp4',
+    '潮汕牛肉丸': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%B9%96%E5%8D%97%E8%87%AD%E8%B1%86%E8%85%90.mp4',
+    '葡式蛋挞': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%BE%B3%E9%97%A8%E7%8C%AA%E6%89%92%E5%8C%85.mp4',
+    '佛跳墙': 'http://tenv8okq8.hn-bkt.clouddn.com/%E7%A6%8F%E5%B7%9E%E4%BD%9B%E8%B7%B3%E8%94%B7.mp4',
+    '酥油茶': 'http://tenv8okq8.hn-bkt.clouddn.com/%E8%A5%BF%E8%97%8F%E9%85%A5%E6%B2%B9%E8%8C%B6.mp4',
+    '酸汤鱼': 'http://tenv8okq8.hn-bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E9%BB%94%E4%B8%9C%E5%8D%97.mp4',
+    '腊汁肉夹馍': 'http://tenv8okq8.hn-bkt.clouddn.com/%E9%99%95%E8%A5%BF%E7%BE%8A%E8%82%89%E6%B3%A1%E9%A6%8D.mp4',
+    '兰州牛肉面': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%85%B0%E5%B7%9E%E7%89%9B%E8%82%89%E9%9D%A2.mp4',
+    '哈尔滨红肠': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%93%88%E5%B0%94%E6%BB%A8%E7%BA%A2%E8%82%A0.mp4',
+    '大连海参': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%A4%A7%E8%BF%9E%E6%B5%B7%E5%8F%82.mp4',
+    '西湖醋鱼': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E9%86%8B%E9%B1%BC.mp4',
+    '孝感麻糖': 'http://tenv8okq8.hn-bkt.clouddn.com/%E6%AD%A6%E6%B1%89%E7%83%AD%E5%B9%B2%E9%9D%A2.mp4',
+    '逍遥镇胡辣汤': 'http://tenv8okq8.hn-bkt.clouddn.com/%E9%80%8D%E9%81%A5%E9%95%87%E8%83%A1%E8%BE%A3%E6%B1%A4.mp4',
+    '四川火锅': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%BF%E5%BC%8F%E5%8F%89%E7%83%A7%E9%A5%AD.mp4',
+    '尕面片': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%93%88%E5%B0%94%E6%BB%A8%E9%94%85%E5%8C%85%E8%82%89.mp4',
+    '菠萝油': 'http://tenv8okq8.hn-bkt.clouddn.com/%E5%B9%BF%E4%B8%9C%E7%99%BD%E5%88%87%E9%B8%A1.mp4',
   };
 
   const imageFileMap: { [key: string]: string } = {
@@ -102,16 +102,16 @@ const VideoZone: React.FC = () => {
     '大连海参': '/image/大连海参.webp',
     '西湖醋鱼': '/image/西湖醋鱼.webp',
     '孝感麻糖': '/image/热干面.webp',
-    '逍遥镇胡辣汤': '/image/刀削面.webp',
+    '逍遥镇胡辣汤': '/image/逍遥镇胡辣汤.webp',
     '四川火锅': '/image/叉烧.webp',
     '尕面片': '/image/锅包肉.webp',
     '菠萝油': '/image/广东白切鸡.webp',
   };
 
   const getVideoUrl = (foodName: string) => {
-    const videoFile = videoFileMap[foodName];
-    if (videoFile) {
-      return `/${videoFile}`;
+    const videoUrl = videoFileMap[foodName];
+    if (videoUrl) {
+      return videoUrl;
     }
     return '';
   };

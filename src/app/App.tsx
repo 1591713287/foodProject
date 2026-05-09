@@ -19,7 +19,6 @@ import EditProfile from './pages/EditProfile';
 import Feedback from './pages/Feedback';
 import AboutApp from './pages/AboutApp';
 import VersionInfo from './pages/VersionInfo';
-import VideoTest from './pages/VideoTest';
 import { ProtectedRoute } from './components/ProtectedRoute';
 
 // 滚动管理组件
@@ -112,7 +111,6 @@ function AppContent() {
         <Route path="/about" element={<AboutApp />} />
         <Route path="/version" element={<VersionInfo />} />
         <Route path="/category/:category" element={<CategoryList />} />
-        <Route path="/video-test" element={<VideoTest />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
